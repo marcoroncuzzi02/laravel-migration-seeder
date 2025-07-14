@@ -7,5 +7,15 @@
 </head>
 <body>
     <h1>LISTA TRENI</h1>
+
+    @foreach($trains as $train)
+
+        <p>
+            <h3>treno numero:</h3>
+            <span> {{ $train->codice_treno }}</span>
+            
+        </p>
+
+    @endforeach
 </body>
 </html>

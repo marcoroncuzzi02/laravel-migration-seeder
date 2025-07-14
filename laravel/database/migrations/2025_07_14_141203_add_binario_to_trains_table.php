@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('trains', function (Blueprint $table) {
-            $table->integer('binario');
+            $table->integer('binario')->after('orario_di_arrivo');
         });
     }
 
